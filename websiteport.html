@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monu Kumar Singh | Portfolio</title>
+  <link rel="stylesheet" href="websiteport.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <header>
+      <header>
+    <nav class="navbar">
+      <div class="logo">Monu Kumar<span> Singh</span></div>
+      <button class="burger-menu-btn" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Core-skills">Core Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="home" class="hero">
+
+    <div class="hero-left">
+      <h3>Hi, I'm</h3>
+      <h1><span>Monu Kumar Singh</span></h1>
+      <h1 class="reduce">Hello, I am <span id="changing-text"></span></h1>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed("#changing-text", {
+          strings: ["Software Engineer", "Web Developer", "AI/ML Enthusiast", "Programmer"],
+          typeSpeed: 80,
+          backSpeed: 50,
+          backDelay: 1500,
+          loop: true
+        });
+      </script>
+      <div class="buttons">
+        <a href="file:///C:/Users/Lenovo/Downloads/MonuKumar.resume%20(5).pdf" class="btn resume"><i
+            class="fa-solid fa-download"></i> Resume</a>
+        <a href="#contact" class="btn contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/monu-kumar-singh-3800602a2/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Monukumar8824"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/MonukumarS71475 "><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="pksingh9785@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="tagline">Code with logic, design with love.</p>
+    </div>
+    <div class="hero-right">
+      <img src="monuprofiles.jpg" alt="My Profile">
+    </div>
+
+  </section>
+
+
+  <section id="about" class="about-section">
+    <div class="about-text">
+      <h2><u># About Me </u></h2>
+      <hr>
+
+      <p>
+        Hey there, I'm <span class="highlight">Monu Kumar Singh</span> —
+        a passionate Software Engineer exploring Web Development and AI
+        while building smart, dynamic applications.
+      </p>
+      <p>
+        Over the past year, I have improved my frontend and backend skills,
+        and now I'm learning DSA and exploring my coding skills.
+      </p>
+      <p>
+        Most days, I'm deep in code with my go-to fuel: chai ☕ + music 🎧.
+        I learn best by building—curiosity always pulls me under the hood.
+      </p>
+      <p class="special">
+        When I'm not in coding mode, I'm reading, creating something new enjoying our life with our family,
+        or chasing ideas that keep life fun and balanced.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="monupic2.jpg" alt="Laptop Illustration">
+    </div>
+  </section>
+
+  <section id="Core-skills">
+    <h1 class="main-title"><u># Core Skills </u></h1>
+
+
+    <div class="tabs">
+      <div class="tab active" onclick="showSkills('frontend')">Frontend</div>
+      <div class="tab" onclick="showSkills('backend')">Backend</div>
+      <div class="tab" onclick="showSkills('databases')">Databases</div>
+      <div class="tab" onclick="showSkills('ai')">AI/ML</div>
+    </div>
+
+
+    <div class="skills" id="frontend" style="display:block;">
+      <div class="skill">
+        <div class="skill-name">Bootstrap</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="30"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="30"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">HTML5</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="80"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS3</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="70"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="skills" id="backend">
+      <div class="skill">
+        <div class="skill-name">C++</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="70"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Core Java</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="60"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="skills" id="databases">
+      <div class="skill">
+        <div class="skill-name">MySQL</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="60"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">SQL</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="50"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="skills" id="ai">
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="50"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Machine Learning</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="40"></div>
+        </div>
+      </div>
+    </div>
+    
+
+  </section>
+
+  <section id="experience">
+    <div class="experience-type">
+      <h1 class="head"><u># Experience </u></h1>
+      <img class="pic" src="https://algo-mohit.github.io/Portfolio/dredtech_innovations_logo.jpeg" alt><span
+        class="dredtech-text"> DRedTech Innovations</span>
+      <p class="point-1">Internship Trainee</p><br>
+      <p class="point-2">Jun 2025 - Present</p>
+      <br>
+
+      <p class="point-3">Intern Trainee at DRedTech Innovations . I am currently learning and working on:</p><br>
+
+
+      <ul class="points">
+        <li>C++ Programming - Strengthening fundamentals and applying concepts through problem solving.</li><br>
+        <li>Data Structures and Algorithms (DSA) - Practicing problem-solving techniques to build strong logic-building
+          skills.</li><br>
+        <li>Python - Exploring backend development and building web-based applications.</li><br>
+
+        <li>Core Java - Exploring core java and learning its framework </li><br>
+        <li>Database Management Systems (DBMS) - Understanding relational databases and performing CRUD operations using
+          SQL.</li>
+      </ul><br>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="education-detail">
+      <p class="edu"><u># Education </u></p>
+      <strong class="name">Secondary School</strong><br>
+      <p class="school-name">G.S.S.S.Rajendra Marg School Bhilwara</p><br>
+      <ul class="yer">
+        <pre><li>Year of Completion: 2022 </pre>
+        </li>
+        <pre><li>Stream: Science </pre>
+        </li>
+      </ul>
+      <br>
+      <br>
+      <strong class="high-edu">Bachelor of technology</strong>
+      <p class="colg">M.L.V.Textile & Engineering College Bhilwara</p>
+      <ul>
+        <pre> <li class="grad">Year of completion: 2026 </pre>
+        </li>
+        <pre><li class="grad">Current Year: final year </pre>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr>
+  <section id="projects">
+    <div class="project-list">
+      <p class="proj"><u># Projects</u></p>
+      <div class="slider">
+
+        <div class="card active">
+          <img src="Hostel.jpg" alt="Project 1">
+          <h2>Hostel Accommodation Management System</h2>
+          <p>
+            An all-in-one platform for managing students, rooms, visitors, fees, and security
+            — making hostel administration smarter and hassle-free.
+          </p>
+          <div class="btns">
+            <a href="https://github.com/Monukumar8824" class="github">GitHub</a>
+            <a href="#" class="demo">Live Demo</a>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img src="profilemonu.jpg" alt="Project 2">
+          <h2>Portfolio Website</h2>
+          <p>
+            A modern and responsive portfolio website that highlights my journey,
+            skills, and projects — all in one place.
+          </p>
+          <div class="btns">
+            <a href="https://github.com/Monukumar8824" class="github">GitHub</a>
+            <a href="#" class="demo">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="india.jpg" alt="Project 3">
+          <h2>Responsive Webpage</h2>
+          <p>
+            A modern responsive webpage designed to look great on any device,
+            whether it's a phone, tablet, or desktop.
+          </p>
+          <div class="btns">
+            <a href="https://github.com/Monukumar8824" class="github">GitHub</a>
+            <a href="#" class="demo">Live Demo</a>
+          </div>
+        </div>
+
+
+
+        <button class="arrow left" onclick="prevCard()">❮</button>
+        <button class="arrow right" onclick="nextCard()">❯</button>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <div class="contact-form">
+      <h1># Contact Us</h1>
+      <h2>Let's Talk</h2>
+      <p>Have a project in mind or just want to connect? <br>
+        Feel free to send me a message.</p>
+
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="youremail@.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Share your message" required></textarea>
+
+        <button type="submit">✈ Send</button>
+      </form>
+    </div>
+
+</section>
+
+<footer>
+  <div class="footer-left">
+    <a href="#">Terms & Conditions</a> |
+    <a href="#">Privacy Policy</a>
+  </div>
+
+  <div class="footer-center">
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-x-twitter"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+  </div>
+
+  <div class="footer-right">
+    © 2025 Monu Kumar Singh. All rights reserved.<br>
+    Designed by Monu Kumar Singh
+  </div>
+</footer>
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const burgerBtn = document.querySelector('.burger-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    burgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  });
+  let index = 0;
+  const cards = document.querySelectorAll(".card");
+
+  function showCard(i) {
+    cards.forEach((card, idx) => {
+      card.classList.remove("active");
+      if (idx === i) card.classList.add("active");
+    });
+  }
+
+  function prevCard() {
+    index = (index - 1 + cards.length) % cards.length;
+    showCard(index);
+  }
+
+  function nextCard() {
+    index = (index + 1) % cards.length;
+    showCard(index);
+  }
+
+  function showSkills(category) {
+        let tabs = document.querySelectorAll(".tab");
+        tabs.forEach(tab => tab.classList.remove("active"));
+        event.target.classList.add("active");
+
+        let skills = document.querySelectorAll(".skills");
+        skills.forEach(skill => skill.style.display = "none");
+
+        document.getElementById(category).style.display = "block";
+
+
+        let bars = document.querySelectorAll(`#${category} .progress`);
+        bars.forEach(bar => {
+          bar.style.width = "0"; 
+          setTimeout(() => {
+            bar.style.width = bar.getAttribute("data-percent") + "%";
+          }, 200);
+        });
+      }
+
+      window.onload = () => {
+        let bars = document.querySelectorAll("#frontend .progress");
+        bars.forEach(bar => {
+          setTimeout(() => {
+            bar.style.width = bar.getAttribute("data-percent") + "%";
+          }, 200);
+        });
+      };
+</script>
+</body>
+
+</html>
